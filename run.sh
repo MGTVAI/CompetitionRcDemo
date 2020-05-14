@@ -30,7 +30,7 @@ function train_submission() {
      --submission_input_file=$submission_input_file \
      --model_out="./data/ouput/model_`date +%Y%m%d_%H%M%S`.pkl" \
      --test_out="./data/ouput/test_`date +%Y%m%d_%H%M%S`.data" \
-     --submission_out="${submission_output_dir}/submission_`date +%Y%m%d_%H%M%S`.data" \
+     --submission_out="${submission_output_dir}/submission_`date +%Y%m%d_%H%M%S`.csv" \
 
 }
 
