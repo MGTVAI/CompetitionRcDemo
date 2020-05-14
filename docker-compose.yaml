@@ -1,0 +1,14 @@
+version: '3'
+services:
+  teamnamedemo:
+     image: hub.docker.com/demo/mgtv-rc-demo:0.0.1
+     container_name: teamname-demo
+     network_mode: "none"
+     volumes:
+       - ${DATA_DIR}:/data
+     environment:
+         - DATA_DIR=/data
+     stdin_open: true 
+     tty: true
+     #this just for debug
+     #entrypoint: /bin/bash
