@@ -4,11 +4,10 @@
 # @author: tangye <tangye@mgtv.com|tangyel@126.com>
 # @author: zzh <zhouzhou@mgtv.com|hzhzh007@gmail.com>
 
-import numpy as np
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction import FeatureHasher
-from sklearn.preprocessing import StandardScaler, OneHotEncoder, KBinsDiscretizer
+from sklearn.preprocessing import OneHotEncoder
 from sklearn.linear_model import LogisticRegression
 from sklearn.utils import parallel_backend
 import pandas as pd
@@ -18,7 +17,6 @@ import data_helper
 from joblib import dump, load
 from absl import flags, app
 import traceback
-import pickle
 import logging
 import sys
 
@@ -82,10 +80,6 @@ def submission_data(out_file_name, clf, submission_df):
 
 def pipeline():
     '''
-    :param train_file:
-    :param test_file:
-    :param test_out:
-    :param model:
     '''
     # load files
     train_df, y_train = data_helper.load_data(FLAGS.train_file)

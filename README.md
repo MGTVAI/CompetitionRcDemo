@@ -20,7 +20,7 @@ make run
 ## docker 格式说明
 
 * 选手可以选`amd64`下、OS为`linux`的任意基础镜像环境
-* 验证机器使用普通非GPU 机器8核32G 机器，选手的训练脚本应能在`12hour`内完成训练
+* 验证机器使用普通非GPU 机器8核32G 机器，选手的训练脚本原则上应能在`12hour`内完成训练
 * 数据将挂载在/data/ 目录下，docker image中不需要挂载数据文件
 * 必须启动执行：ENTRYPOINT && CMD train|submission|train_submission, 可以参考Dockerfile
 * 容器启动后不可以访问外部网络`--network none`

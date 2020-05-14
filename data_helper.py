@@ -6,12 +6,8 @@
 
 
 import fire
-import numpy as np
 import pandas as pd
 import pyarrow.parquet as pq
-import logging
-
-import os
 
 
 def load_data(file_path):
@@ -19,17 +15,19 @@ def load_data(file_path):
     """
     table = pq.read_table(file_path)
     df = table.to_pandas()
-    #TODO: here the participant can use their own feature enginer 
+    # TODO: here use your own feature engineering
 
     Y = df.pop('label').values
     return df, Y
 
+
 def load_eval_data(file_path):
     table = pq.read_table(file_path)
     df = table.to_pandas()
-    #TODO: here the participant can use their own feature enginer 
+    # TODO: here use your own feature engineering
 
     return df
+
 
 if __name__ == '__main__':
     fire.Fire()
