@@ -5,7 +5,7 @@
 python oss.py <local_file_path> <code>
 ```
 * <local_file_path>:本地待提交的文件路径
-* <code>:从[赛事方网站](http://challenge.ai.mgtv.com/contest/detail) 页面复制的授权码
+* < code> :从[赛事方网站](http://challenge.ai.mgtv.com/contest/detail) 页面复制的授权码
 
 # 注意事项
 
