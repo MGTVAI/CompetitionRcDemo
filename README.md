@@ -13,6 +13,14 @@ use docker to run
 make run
 ```
 
+#  数据下载、提交脚本
+
+
+由于`oss-browser` 的系统兼容性不是很好，部分选手不能打开 oss-browser，故提供此脚本方便下载、提交
+
+* 下载见[下载脚本](/download/oss.py)
+* 提交见[提交脚本](/upload/README.md)
+
 # docker 镜像说明
 
 进入获奖名单中的用户需要提交可训练、可复现的docker image
