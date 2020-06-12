@@ -24,9 +24,9 @@ def get_oss_file(param):
     here we just known the file path, can be change  to your self path , or just list the bucket
     '''
     bucket_obj.get_object_to_file(
-        "mgtv_contest/res/recommendation/recommendation/eval.tar.gz", "./eval.tar.gz")
+        "mgtv_contest/resb/recommendation/recommendation/eval.tar.gz", "./eval.tar.gz")
     bucket_obj.get_object_to_file(
-        "mgtv_contest/res/recommendation/recommendation/train.tar.gz", "./train.tar.gz")
+        "mgtv_contest/resb/recommendation/recommendation/train.tar.gz", "./train.tar.gz")
 
 
 def main():
