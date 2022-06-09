@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 
 # @file: metrics.py
-# @author: tangye <tangye@mgtv.com|tangyel@126.com>
-# @author: zzh <zhouzhou@mgtv.com|hzhzh007@gmail.com>
 
 import numpy as np
 from collections import defaultdict
